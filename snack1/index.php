@@ -50,14 +50,14 @@ $nbaMatches = [
 <body>
 
 <ul>
-        <?php for($i = 0; $i < count($nbaMatches); $i++) { ?>
-            <?php $this_nbaMatches = $nbaMatches[$i]; ?>
+        <?php for($i = 0; $i < count($nbaMatches); $i++) { 
+             $nbaMatch = $nbaMatches[$i]; ?>
            
             <li>
-                <?php echo $this_nbaMatches['casa'] ?> - 
-                <?php echo $this_nbaMatches['ospite'] ?> | 
-                <?php echo $this_nbaMatches['punticasa'] ?> - 
-                <?php echo $this_nbaMatches['puntiospite'] ?>
+                <?php echo $nbaMatch['casa'] ?> - 
+                <?php echo $nbaMatch['ospite'] ?> | 
+                <?php echo $nbaMatch['punticasa'] ?> - 
+                <?php echo $nbaMatch['puntiospite'] ?>
             </li>
         <?php } ?>     
     </ul>
